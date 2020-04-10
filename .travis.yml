@@ -1,0 +1,29 @@
+language: node_js
+
+node_js:
+    - stable
+
+services:
+    - docker 
+cache:
+    directories:
+    - node_modules
+
+before_install:
+    - docker build -t chiefbee/web-react -f Dockerfile.dev .
+ 
+script:
+    - docker run -e CI=true chiefbee/web-react npm run test
+
+# deploy:
+#     provider: elasticbeanstalk
+#     region: us-east-1  
+#     app: web-react-app
+#     env: WebReactApp-env
+#     bucket_name: elasticbeanstalk-us-east-1-096846156347
+#     bucket_path: web-react-app
+#     on:
+#         branch: master
+
+# access_key_id: $AWS_ACCESS_KEY
+# secret_access_key: $AWS_SECRET_KEY
