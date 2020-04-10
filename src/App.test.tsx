@@ -17,3 +17,7 @@ test("300 is 300", () => {
 test("400 is 400", () => {
   expect(400).toEqual(400);
 });
+
+test("500 is 500", () => {
+  expect(500).toEqual(500);
+});
