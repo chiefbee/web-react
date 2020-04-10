@@ -4,18 +4,19 @@
 
 FROM node:alpine as building
 
-WORKDIR './app'
+WORKDIR '/app'
 
-COPY package.json .
-
+COPY package*.json ./
+COPY tsconfig.json ./
 RUN npm install
 
 COPY . .
 
 RUN npm run build
 
-# 2. run phase 
+# 2. run phase ###
 
 FROM nginx 
+EXPOSE 80
 
 COPY --from=building /app/build /usr/share/nginx/html
