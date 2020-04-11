@@ -14,7 +14,7 @@ COPY . .
 
 RUN npm run build
 
-# 2. run phase ###
+# 2. run phase
 
 FROM nginx 
 EXPOSE 80
