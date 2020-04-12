@@ -2,7 +2,8 @@
 Dockerfile
 Dockerfile.dev
 node_modules
-npm-debug.log# Elastic Beanstalk Files
+npm-debug.log
+# Elastic Beanstalk Files
 .elasticbeanstalk/*
 .git
 .gitignore# Elastic Beanstalk Files
