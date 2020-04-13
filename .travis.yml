@@ -19,11 +19,11 @@ deploy:
     verbose: true
     skip_cleanup: true
     provider: elasticbeanstalk
-    region: "us-east-1"  
-    app: "web-react-app"
-    env: "WebReactApp-env"
+    region: "us-east-1"
+    app: "beachwalk-resort"
+    env: "BeachwalkResort-dev-2"
     bucket_name: "elasticbeanstalk-us-east-1-096846156347"
-    bucket_path: "web-react-app"
+    bucket_path: "beachwalk-resort"
     on:
         branch: master
     access_key_id: $AWS_ACCESS_KEY
