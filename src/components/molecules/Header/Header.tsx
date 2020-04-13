@@ -9,7 +9,7 @@ import { PrimaryButton } from "../../atoms/Button/Button";
 // <PrimaryButton as="a" href="http://www.google.com" marginTop="1rem">View Details</PrimaryButton>
 
 const Header = () => {
-  const bannerTitle = `Deniz welcomes you to Beachwalk Resort!`;
+  const bannerTitle = `Welcome to Beachwalk Resort!`;
   const bannerText = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam 
   molestiae accusamus, maxime asperiores ducimus neque.`;
 
